@@ -1,0 +1,20 @@
+{
+	"id": "0ba3aacd-3e50-46f5-a3e3-34931a95ea3a",
+	"createdAt": "2025-01-30T12:01:18.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [],
+	"name": "weq",
+	"ver": "25.02.03.1257",
+	"description": null,
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": true,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "01c17741-f65a-4645-9c42-bd5e74f100d5",
+	"package": "42813559-0788-48e1-a985-48a8c7ecba2d"
+}

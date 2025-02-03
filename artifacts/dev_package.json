@@ -1,0 +1,63 @@
+{
+	"id": "42813559-0788-48e1-a985-48a8c7ecba2d",
+	"createdAt": "2025-01-30T15:08:05.000Z",
+	"createdBy": "admin",
+	"git": {
+		"remote": "https://github.com/TerryakiSauce/mydev.git",
+		"branch": "master"
+	},
+	"name": "mydev",
+	"description": "",
+	"ver": "25.02.03.1454",
+	"enableCICD": true,
+	"internalReadOnly": false,
+	"oeVersion": null,
+	"excludeTemplateFiles": false,
+	"roles": [],
+	"apps": [],
+	"api": [],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [],
+	"jsclass": [
+		{
+			"id": "0ba3aacd-3e50-46f5-a3e3-34931a95ea3a",
+			"name": "weq",
+			"description": null
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "01c17741-f65a-4645-9c42-bd5e74f100d5",
+			"name": "weq",
+			"description": ""
+		}
+	],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"tile_layout": [],
+	"category": [],
+	"tilegroup_layout": [],
+	"launchpad": [],
+	"launchpad_layout": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": [],
+	"theme_ui5": [],
+	"webapp": []
+}
