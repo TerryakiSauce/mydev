@@ -8,7 +8,7 @@
 	},
 	"name": "mydev",
 	"description": "",
-	"ver": "25.02.03.1454",
+	"ver": "25.02.03.1456",
 	"enableCICD": true,
 	"internalReadOnly": false,
 	"oeVersion": null,
