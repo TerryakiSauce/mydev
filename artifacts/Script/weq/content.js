@@ -10,5 +10,6 @@ result.data = [
     { name: "William", age: 38, occupation: "Software Developer" },
     { name: "Olivia", age: 27, occupation: "Nurse" }
 ];
+console.log("42");
 
 complete();
