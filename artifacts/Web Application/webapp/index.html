@@ -114,6 +114,8 @@
                 e.preventDefault();
                 const panel = e.target.closest('.panel');
                 panel.classList.remove('drag-over');
+
+                console.log("drop!");
                 
                 const draggingTile = document.querySelector('.dragging');
                 if (draggingTile && panel) {
