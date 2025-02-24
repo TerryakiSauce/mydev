@@ -1,0 +1,31 @@
+{
+	"id": "460e4aea-8df2-ef11-90cb-000d3ab040cb",
+	"createdAt": "2025-02-24T09:01:30.083Z",
+	"createdBy": "terry.avgenikou@neptune-software.com",
+	"settings": {
+		"mainFilePath": "drag-drop-tiles.html"
+	},
+	"name": "webapp",
+	"type": "react",
+	"description": null,
+	"onlyRuntime": false,
+	"package": "69e15c3e-54bc-ef11-88d0-000d3ab39f9e",
+	"roles": [],
+	"runtime": {
+		"id": "460E4AEA-8DF2-EF11-90CB-000D3AB040CB",
+		"createdAt": "2025-02-24T09:01:30.086Z",
+		"page": "file:///index.html",
+		"name": "webapp",
+		"ver": null,
+		"publicAccess": false,
+		"assets": [
+			{
+				"runtimeId": "460E4AEA-8DF2-EF11-90CB-000D3AB040CB",
+				"path": "/drag-drop-tiles.html",
+				"createdAt": "2025-02-24T09:04:20.606Z",
+				"updatedAt": "2025-02-24T09:04:20.606Z",
+				"source": "file:////drag-drop-tiles.html"
+			}
+		]
+	}
+}

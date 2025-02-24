@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Tiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .panel {
+            width: 300px;
+            min-height: 400px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .tile {
+            background-color: #3498db;
+            color: white;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+            cursor: move;
+            user-select: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .tile:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .tile.dragging {
+            opacity: 0.5;
+        }
+
+        .panel.drag-over {
+            background-color: #f8f9fa;
+            border: 2px dashed #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="panel" id="panel1">
+            <div class="tile" draggable="true">Tile 1</div>
+            <div class="tile" draggable="true">Tile 2</div>
+            <div class="tile" draggable="true">Tile 3</div>
+        </div>
+        <div class="panel" id="panel2">
+            <div class="tile" draggable="true">Tile 4</div>
+            <div class="tile" draggable="true">Tile 5</div>
+            <div class="tile" draggable="true">Tile 6</div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tiles = document.querySelectorAll('.tile');
+            const panels = document.querySelectorAll('.panel');
+
+            tiles.forEach(tile => {
+                tile.addEventListener('dragstart', dragStart);
+                tile.addEventListener('dragend', dragEnd);
+            });
+
+            panels.forEach(panel => {
+                panel.addEventListener('dragover', dragOver);
+                panel.addEventListener('dragenter', dragEnter);
+                panel.addEventListener('dragleave', dragLeave);
+                panel.addEventListener('drop', drop);
+            });
+
+            function dragStart(e) {
+                e.target.classList.add('dragging');
+                e.dataTransfer.setData('text/plain', e.target.textContent);
+                e.dataTransfer.effectAllowed = 'move';
+            }
+
+            function dragEnd(e) {
+                e.target.classList.remove('dragging');
+            }
+
+            function dragOver(e) {
+                e.preventDefault();
+                e.dataTransfer.dropEffect = 'move';
+            }
+
+            function dragEnter(e) {
+                e.preventDefault();
+                e.target.closest('.panel').classList.add('drag-over');
+            }
+
+            function dragLeave(e) {
+                e.target.closest('.panel').classList.remove('drag-over');
+            }
+
+            function drop(e) {
+                e.preventDefault();
+                const panel = e.target.closest('.panel');
+                panel.classList.remove('drag-over');
+                
+                const draggingTile = document.querySelector('.dragging');
+                if (draggingTile && panel) {
+                    const sourcePanel = draggingTile.parentElement;
+                    if (sourcePanel !== panel) {
+                        sourcePanel.removeChild(draggingTile);
+                        panel.appendChild(draggingTile);
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

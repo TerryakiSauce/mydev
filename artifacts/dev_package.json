@@ -1,14 +1,14 @@
 {
-	"id": "42813559-0788-48e1-a985-48a8c7ecba2d",
-	"createdAt": "2025-01-30T15:08:05.000Z",
-	"createdBy": "admin",
+	"id": "69e15c3e-54bc-ef11-88d0-000d3ab39f9e",
+	"createdAt": "2024-12-17T08:52:29.133Z",
+	"createdBy": "terry.avgenikou@neptune-software.com",
 	"git": {
 		"remote": "https://github.com/TerryakiSauce/mydev.git",
 		"branch": "master"
 	},
-	"name": "mydev",
-	"description": "",
-	"ver": "25.02.03.1456",
+	"name": "testtt",
+	"description": null,
+	"ver": "25.02.24.1041",
 	"enableCICD": true,
 	"internalReadOnly": false,
 	"oeVersion": null,
@@ -19,20 +19,8 @@
 	"odataSource": [],
 	"odataMock": [],
 	"dictionary": [],
-	"jsclass": [
-		{
-			"id": "0ba3aacd-3e50-46f5-a3e3-34931a95ea3a",
-			"name": "weq",
-			"description": null
-		}
-	],
-	"jsscript_group": [
-		{
-			"id": "01c17741-f65a-4645-9c42-bd5e74f100d5",
-			"name": "weq",
-			"description": ""
-		}
-	],
+	"jsclass": [],
+	"jsscript_group": [],
 	"theme": [],
 	"pdf": [],
 	"rulesengine": [],
@@ -59,5 +47,11 @@
 	"wf_determination": [],
 	"wf_taskaction": [],
 	"theme_ui5": [],
-	"webapp": []
+	"webapp": [
+		{
+			"id": "460e4aea-8df2-ef11-90cb-000d3ab040cb",
+			"name": "webapp",
+			"description": null
+		}
+	]
 }
